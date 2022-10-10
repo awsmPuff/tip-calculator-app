@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; left: 0; right: 0; bottom: 10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <img class="logo" src="./images/logo.svg" alt="splitter">
+
+  <main>
+    <form class="details">
+      <div class="bill">
+        <div class="bill-line">
+          <h1>Bill</h1>
+          <p class="message-bill"></p>
+        </div>
+        <input class="bill-input" type="text" placeholder="0" required>
+        <img src="./images/icon-dollar.svg" alt="$">
+      </div>
+      <p>Select Tip %</p>
+      <div class="tip-grid">
+        <button class="tip-btn g-1 original" value="0.05" type="submit">5%</button>
+        <button class="tip-btn g-2 original" value="0.1" type="submit">10%</button>
+        <button class="tip-btn g-3 original" value="0.15" type="submit">15%</button>
+        <button class="tip-btn g-4 original" value="0.25" type="submit">25%</button>
+        <button class="tip-btn g-5 original" value="0.5" type="submit">50%</button>
+        <input class="custom original" type="text" placeholder="Custom">
+      </div>
+      <div class="num">
+        <div class="num-line">
+          <h1>Number of People</h1>
+          <p class="message-num"></p>
+        </div>
+        <input class="num-input" type="text" placeholder="0" required>
+        <img src="./images/icon-person.svg" alt="person">
+      </div>
+    </form>
+
+    <section class="results">
+      <div class="tip-per r-1">
+        <h1> Tip Amount</h1>
+        <p>/ person</p>
+      </div>
+      <div class="tip-num r-2">$0.00</div>
+      <div class="total-per r-3">
+        <h1>Total</h1>
+        <p>/ person</p>
+      </div>
+      <div class="total-num r-4">$0.00</div>
+      <div class="reset r-5">
+        <button class="resetBtn">Reset</button>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Laurenxx</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
